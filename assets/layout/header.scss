@@ -1,0 +1,134 @@
+@use '../abstracts/mixins' as *;
+
+header {
+    position: relative;
+    min-width: 500px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/assets/images/Background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+    }
+}
+
+.secondary-btn {
+    display: flex;
+    justify-content: right;
+    padding: 1rem 0;
+    a {
+        display: block;
+        font-size: 1.8rem;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: rgba(249, 249, 249, 1);
+        background-color: rgba(0, 0, 0, 0.8);
+        padding: 1.5rem;
+        border: 0.1rem rgba(192, 192, 192, 1) solid;
+        border-radius: 0.4rem;
+    }
+}
+
+.row {
+    width: 60vw;
+    height: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    .content-first {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+        gap: 5rem;
+        margin-bottom: 4rem;
+        flex: 1;
+        .item {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;  
+            .box-img {
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.primary-btn {
+    display: block;
+    a {
+        width: 31rem;
+        display: block;
+        text-transform: uppercase;
+        @include button-style(1.8rem, rgba(192, 192, 192, 1), none, 2rem 3rem, rgba(0, 99, 229, 1), center, 0.4rem);
+    }
+}
+
+.content-second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    flex: 0.5;
+    .item {
+        display: flex;
+        flex-direction: column;
+        .box-img {
+            display: block;
+            margin: 4rem 0;
+        }
+        h1 {
+            font-size: 1.6rem;
+            color: rgba(192, 192, 192, 1);
+            text-align: center;
+            font-weight: normal;
+            margin-bottom: 2rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: rgba(192, 192, 192, 1);
+            text-align: center;
+        }
+        h3 {
+            font-size: 2rem;
+            color: #f9f9f9;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop {
+    display: none;        
+    }
+    .row-mobile {
+        width: 60vw;
+        height: 60%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    header {
+        background-position-x: 10%;
+    }
+}
+
+@media (min-width: 769px) {
+    .mobile {
+        display: none;
+    }
+}
