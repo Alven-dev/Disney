@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: rgb(4, 7, 20);
+  color: rgb(249, 249, 249);
+  font-size: 10px;
+  font-family: "Bee", sans-serif;
+  overflow-x: hidden;
+}/*# sourceMappingURL=reset.css.map */

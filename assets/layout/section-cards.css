@@ -1,0 +1,105 @@
+.cards {
+  margin-bottom: 10rem;
+}
+
+.cards .container {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+.cards .container .row {
+  width: 45%;
+}
+.cards .container .row ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  gap: 1rem;
+}
+.cards .container .row ul li {
+  padding-bottom: 1rem;
+}
+.cards .container .row ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 2rem;
+  color: rgb(249, 249, 249);
+  text-transform: uppercase;
+}
+
+.cards .container .row ul li:first-child {
+  border-bottom: 5px solid rgb(249, 249, 249);
+  border-radius: 0.2rem;
+}
+
+.cards .container .content {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .cards .container {
+    width: 90%;
+    margin-left: 5rem;
+  }
+  .cards .container .row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+  }
+  .cards .container .row ul {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    width: 100%;
+    gap: 0;
+    padding: 0;
+  }
+  .cards .container .row ul li {
+    margin: 0 1rem;
+  }
+  .cards .container .content {
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .cards .container .content .carousel-big {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .cards .container .content .carousel {
+    transform: scale(32%);
+    display: flex;
+    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -7.5rem;
+  }
+}
+.carousel-big .card img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.carousel-big .card img::before {
+  content: url("assets/images/Vector.png");
+}/*# sourceMappingURL=section-cards.css.map */
